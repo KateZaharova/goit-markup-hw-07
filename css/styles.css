@@ -58,15 +58,14 @@ img{
 .section{
     padding-top: 120px;
     padding-bottom: 120px;
-    /*background-color: #E5E5E5;*/
-}
+ }
 
 .container{
-    width: 1158px;
+    /*width: 1158px;*/
+    /*width:100%;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
-    /*outline:1px solid tomato;*/
+    margin: 0 auto;*/
 }
 
 .visually-hidden {
@@ -152,7 +151,7 @@ img{
 .address-contact:hover,
 .address-contact:focus{
     color:var(--hover-color);   
-} 
+}
 
 
 .logo-header{
@@ -189,6 +188,8 @@ img{
     color: var(--primary-color);
 }
 
+
+
 .address-list{
     display:flex;
     align-items:center;
@@ -221,6 +222,134 @@ img{
 .address-list .address-item+.address-item{
     margin-left:40px;
 }
+
+.mobile-menu{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position:fixed;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: #FFFFFF;
+
+    padding: 80px 35px 40px 40px;
+
+    opacity:0;
+    pointer-events: none;
+    visibility:hidden;
+}
+
+.mobile-menu.is-open{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition: visibility 250ms var(--timing-function), opacity 250ms var(--timing-function);
+}
+
+.mobile-menu-close-btn{
+    position: absolute;
+
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 0;
+
+    fill: var(--primary-color);
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
+}
+
+.mobile-menu-close-btn:focus {
+    fill: #FFFFFF;
+    background-color: var(--focus-color);
+}
+
+.mobile-menu-list{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    margin-bottom: auto;
+}
+
+.mobile-menu-link{
+    font-family: Roboto; 
+    font-weight:700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #2E2F42;
+    transition: color 250ms var(--timing-function);
+}
+
+.mobile-menu-link:focus{
+    color:var(--focus-color);
+}
+
+.address-mobile-menu{ 
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    margin-bottom:48px;
+}
+
+.address-contact-mobile{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color:var(--secondary-color);    
+}
+
+.address-contact-email{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--third-color);
+    transition: color 250ms var(--timing-function);
+}
+
+.address-contact-email:focus{
+    color: var(--focus-color);
+}
+
+.mobile-menu-social-icon-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu-social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: var(--secondary-color);
+    fill: #F4F4FD;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.mobile-menu-social-link:focus {
+    background-color: var(--focus-color);
+}
+
 
 /*-----HERO---------*/
 
@@ -292,9 +421,9 @@ img{
     }
 
 .features-list{
-    display: flex;
+    /*display: flex;*/
     gap: var(--card-set-gap);
-    flex-basis: calc((100%-3*var(--card-set-gap)/4)-24px);
+    /*flex-basis: calc((100%-3*var(--card-set-gap)/4)-24px);*/
     }
 
 .features-icon{
@@ -312,7 +441,8 @@ color: var(--primary-color);
 }
 
 .features-item{
-    width:264px;   
+    /*width:264px;*/  
+    width: 100%;
 }
 
 .features-text{
@@ -745,7 +875,7 @@ color: var(--third-color);
     border-radius: 50%;
     background-position: center;
 
-    background-color: rgba(255,255,255, 0.1);
+    background-color: var(--secondary-color);
     transition: background-color 250ms var(--timing-function);
     }
  
@@ -1092,6 +1222,7 @@ color: var(--third-color);
 .modal-button-submit:hover{
     background-color: var(--focus-color);  
 }
+
 
 
 
