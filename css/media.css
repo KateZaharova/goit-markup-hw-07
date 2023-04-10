@@ -254,6 +254,36 @@ margin: 72px auto 0 auto;
     margin-top:72px;
 }
 
+.bottom-section{
+   padding-top: 96px;
+   padding-bottom: 96px;
+}
+
+.footer-nav-container{
+    flex-direction: column ;
+   }
+
+.bottom-container{
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:72px;
+   }
+
+.logo-bottom{
+justify-content: center;
+}
+
+.bottom-social-icon-container{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:72px;
+}
+
+.bottom-subscribe-container {
+    display:flex;
+    flex-direction: column;
+    margin-left:0;
+    margin-right:0;
 }
         
 /*-----MOBILE FINISH------*/
