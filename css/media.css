@@ -168,7 +168,82 @@
     .mobile-menu-social-link:focus {
         background-color: var(--focus-color);
     }
+
+
+.hero-page-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 428px;
+    margin: 0 auto;
 }
+
+.hero-title {
+    max-width: 320px;
+    font-size: 36px;
+    line-height: 1.11;
+}
+
+.hero-btn {
+margin: 72px auto 0 auto;
+}
+
+.features-section{
+    padding-top:0;
+    padding-bottom:0;
+    margin-top: 96px;
+    margin-bottom: 96px;
+}
+
+.features-container {
+    display: block; 
+}
+
+.features-item:not(:last-child){
+    margin-bottom: 72px;
+}
+
+.features-icon{
+    display:none;
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+    color:var(--primary-color);
+}
+
+.features-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: var(--third-color);
+}
+
+.about-page{
+    display:none;
+}
+
+.team-section{
+    padding-top:96px;
+    padding-bottom:96px;
+}
+
+.team-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-list-item{
+    margin-bottom:72px;
+}
+
         
 /*-----MOBILE FINISH------*/
 /*---------TABLET--------*/ 
@@ -200,8 +275,8 @@
     margin-left: 0;
     margin-top:12px;
 }
-
 }
+
 
 /*-------TABLET FINISH------*/
 /*-----------DESKTOP--------*/
@@ -225,3 +300,10 @@
 
 /*-----DESKTOP FINISH------*/
 
+
+
+/*<picture>
+<source srcset="" media="" sizes="" type="" />
+<source srcset="" media="" sizes="" type="" />
+<img src="" alt="" />
+</picture>*/

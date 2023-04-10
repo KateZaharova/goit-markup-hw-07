@@ -223,15 +223,51 @@ img{
 /*-----HERO---------*/
 
 .hero-page-section{
-    padding-top: 188px;
+    /*padding-top: 188px;
     padding-bottom: 188px;
-    max-width: 1440px;
+    max-width: 1440px;*/
     margin: 0 auto;
 
     background: #2E2F42;
-    background-image: var(--gradient), url(../images/index/hero-bcg.jpg);
+    background-image: var(--gradient), url(../images/index/hero-bcg-mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;  
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width:767px),
+screen and (min-resolution: 192dpi) and (max-width:767px),
+screen and (min-resolution: 2dppx) and (max-width:767px){
+    .hero-page-section{
+        background-image: var(--gradient), url(../images/index/hero-bcg-mob@2x.jpg);
+    }
+}
+
+@media screen and (min-width:768px){
+    .hero-page-section{
+        background-image: var(--gradient), url(../images/index/hero-bcg-tab@1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px),
+screen and (min-resolution: 192dpi) and (min-width:768px),
+screen and (min-resolution: 2dppx) and (min-width:768px) {
+    .hero-page-section {
+        background-image: var(--gradient), url(../images/index/hero-bcg-tab@2x.jpg);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .hero-page-section {
+        background-image: var(--gradient), url(../images/index/hero-bcg-des@1x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px),
+screen and (min-resolution: 192dpi) and (min-width:1200px),
+screen and (min-resolution: 2dppx) and (min-width:1200px) {
+    .hero-page-section {
+        background-image: var(--gradient), url(../images/index/hero-bcg-des@2x.jpg);
+    }
 }
 
 .hero-page-container{
@@ -259,7 +295,7 @@ img{
     display: block;
     align-items: center;
 
-    margin: 48px auto 0 auto;
+    /*margin: 48px auto 0 auto;*/
     border-radius: 4px;
     min-width: 169px;
     padding: 16px 32px;
@@ -284,44 +320,27 @@ img{
 
 /*----------FEATURES-----------*/
 
-.features-container{
-    display: flex;
+/*.features-container{
+    /*display: flex;
     flex-wrap: wrap;
-    }
+    }*/
 
-.features-list{
-    /*display: flex;*/
-    gap: var(--card-set-gap);
-    /*flex-basis: calc((100%-3*var(--card-set-gap)/4)-24px);*/
-    }
+/*.features-list{
+    display: flex;*/
+    /*gap: var(--card-set-gap);*/
+    /*flex-basis: calc((100%-3*var(--card-set-gap)/4)-24px);
+    }*/
 
-.features-icon{
+/*.features-icon{
     margin-bottom: 8px;
     background-color: var(--modal-btn-bcg);
-}
-
-.features-title{
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-
-color: var(--primary-color);
-}
+}*/
 
 .features-item{
     /*width:264px;*/  
     width: 100%;
 }
 
-.features-text{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-
-color: var(--third-color);
-}
 
 /*------------ABOUT--------*/
 
@@ -363,21 +382,7 @@ color: var(--third-color);
     background: #F4F4FD;
 }
 
-.team-card-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    padding: 32px 16px;
-    border: 1px;
-    border-radius: 4px;
-
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.team-title{
+.team-title {
     margin-bottom: 72px;
 
     font-weight: 700;
@@ -387,15 +392,28 @@ color: var(--third-color);
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
-    color: var(--primary-color);    
+    color: var(--primary-color);
+}
+
+.team-card-content-wrapper{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+
+    padding: 32px 16px;
+    border: 1px;
+    border-radius: 4px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list{
-    display: flex;
-
-    flex-wrap: wrap;
-    gap: var(--card-set-gap);
-    flex-basis: calc((100%-3*var(--card-set-gap))/4-24px);
+    /*display: flex;
+    flex-wrap: wrap;*/
+    /*gap: var(--card-set-gap);
+    flex-basis: calc((100%-3*var(--card-set-gap))/4-24px);*/
 }
 
 .team-subtitle{
