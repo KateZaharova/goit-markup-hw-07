@@ -473,19 +473,19 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
 
 /*------------CUSTOMERS------------*/
 
-.customers-section{
+/*.customers-section{
     padding-top:130px;
     padding-bottom: 120px;
-}
+}*/
 
 .customers-title{
-    margin-bottom: 72px;
+    /*margin-bottom: 72px;*/
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -497,14 +497,14 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     display: flex;
     justify-content: space-between;
 
-    gap:var(--card-set-gap);
-    flex-basis: calc((100%-120px)/6)-24px;
+    /*gap:var(--card-set-gap);
+    flex-basis: calc((100%-120px)/6)-24px;*/
 }
 
-.customers-item{
+/*.customers-item{
     width:168px;
     height:88px;
-}
+}*/
 
 .customers-link>.customers-logo{
     display: flex;
