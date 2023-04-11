@@ -146,6 +146,7 @@ img{
 
     color: var(--primary-color); 
     transition: color 250ms var(--timing-function);
+    outline:none;
 }
 
 .menu-link:hover,
@@ -172,7 +173,8 @@ img{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--secondary-color);  
+    color: var(--secondary-color); 
+    outline:none; 
 }
 
 .logo-header>span{
@@ -207,6 +209,7 @@ img{
     
     color: var(--third-color);
     transition: color 250ms var(--timing-function);
+    outline:none;
 }
 
 .address-item:not(:first-child){
@@ -226,7 +229,7 @@ img{
     /*padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 
     background: #2E2F42;
     background-image: var(--gradient), url(../images/index/hero-bcg-mob@1x.jpg);
@@ -278,7 +281,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     margin: 0 auto;
 }
 
-.hero-title{
+/*.hero-title{
     max-width: 496px;
     margin: 0 auto;
 
@@ -289,10 +292,9 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     letter-spacing: 0.02em;
 
     color: #FFFFFF;
-}
+}*/
 
 .hero-btn{
-    display: block;
     align-items: center;
 
     /*margin: 48px auto 0 auto;*/
@@ -300,6 +302,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     min-width: 169px;
     padding: 16px 32px;
     border:none;
+    outline:none;
 
     font-family: var(--primary-font);
     font-weight: 500;
@@ -336,10 +339,9 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     background-color: var(--modal-btn-bcg);
 }*/
 
-.features-item{
-    /*width:264px;*/  
-    width: 100%;
-}
+/*.features-item{
+    width:264px; 
+}*/
 
 
 /*------------ABOUT--------*/
