@@ -460,6 +460,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     width:100%;
     height:100%;
     border-radius: 50%;
+    outline:none;
 
     background-color: var(--secondary-color);
     fill:#F4F4FD;
@@ -516,6 +517,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     height: 100%;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    outline:none;
     
     fill:#8E8F99;
     transition-property: fill, border;
@@ -761,6 +763,7 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     height: 100%;
     border-radius: 50%;
     background-position: center;
+    outline:none;
 
     background-color: var(--secondary-color);
     transition: background-color 250ms var(--timing-function);
@@ -784,11 +787,13 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
 
 .bottom-label{
     display: block;
+    margin-bottom: 16px;
 }
 
 .bottom-p{
-    display: block;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -797,11 +802,12 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .bottom-email-input{
     display: flex;
-    width:264px;
+    /*width:264px;*/
     height:40px;
     padding-left: 16px;
     color:#ffff;
@@ -831,26 +837,30 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
 }
 
 .bottom-btn-submit-nav{
-    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 16px;
 }
 
 .bottom-btn-submit{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
+    /*margin-right: auto;
     margin-left: 24px;
-
-    padding: 8px 64px 8px 24px;
+    padding: 8px 64px 8px 24px;*/
 
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color:#ffff;
     border:none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    outline:none;
 
     transition: background-color 250ms var(--timing-function);
 }
@@ -861,15 +871,18 @@ screen and (min-resolution: 2dppx) and (min-width:1200px) {
 }
 
 .bottom-icon-send{
-    display: block;
+    width: 24px;
+    height: 24px;
+    fill: white;
+    cursor: pointer;
+    margin-left: 16px;
+}
+
+.bottom-icon-send::after{
+    content:'';
     position:absolute;
-    width:24px;
-    height:24px;
-    top: 8px;
-    right:24px;
-    fill:white;
-    cursor:pointer;
-    background-size: contain;
+    top: 0;
+    right: 0;
 }
 
 /*---------------MODAL WINDOW----------*/

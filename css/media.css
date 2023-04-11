@@ -183,10 +183,8 @@ margin: 72px auto 0 auto;
 }
 
 .features-section{
-    padding-top:0;
-    padding-bottom:0;
-    margin-top: 96px;
-    margin-bottom: 96px;
+    padding-top:96px;
+    padding-bottom:96px;
 }
 
 .features-container {
@@ -285,7 +283,19 @@ justify-content: center;
     margin-left:0;
     margin-right:0;
 }
-        
+  
+.bottom-email-input{
+    width:100%;
+}
+
+.bottom-btn-submit {
+    margin-right:auto;
+    margin-left:auto;
+    padding: 8px 24px;
+}    
+
+
+}
 /*-----MOBILE FINISH------*/
 /*---------TABLET--------*/ 
 
