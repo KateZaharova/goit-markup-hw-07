@@ -275,30 +275,6 @@ img{
 
 /*------------ABOUT--------*/
 
-.about-page{
-    padding-top: 0;
-}
-
-.about-title{
-    margin-bottom: 72px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-    color: var(--primary-color);
-}
-
-.about-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--card-set-gap);
-    flex-basis: calc((100%-24px)/3)-24px;
-}
-
 /*.about-item:not(:nth-child(3n)) {
     margin-right: 24px;
 }
@@ -310,10 +286,8 @@ img{
 
 /*-------------TEAM------------*/
 .team-section{
-    background: yellowgreen;
+    background:#F4F4FD;
 }
-
-/*#F4F4FD;*/
 
 .team-title {
     margin-bottom: 72px;
@@ -339,13 +313,6 @@ img{
 
     background-color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
-.team-list{
-    /*display: flex;
-    flex-wrap: wrap;*/
-    /*gap: var(--card-set-gap);
-    flex-basis: calc((100%-3*var(--card-set-gap))/4-24px);*/
 }
 
 .team-subtitle{
@@ -406,11 +373,6 @@ img{
 
 /*------------CUSTOMERS------------*/
 
-/*.customers-section{
-    padding-top:130px;
-    padding-bottom: 120px;
-}*/
-
 .customers-title{
 
     font-family: 'Roboto';
@@ -432,11 +394,6 @@ img{
     /*gap:var(--card-set-gap);
     flex-basis: calc((100%-120px)/6)-24px;*/
 }
-
-/*.customers-item{
-    width:168px;
-    height:88px;
-}*/
 
 .customers-link>.customers-logo{
     display: flex;
@@ -595,18 +552,6 @@ img{
 
 /*----------FOOTER-------------*/
 
-.bottom-section{
-   /*padding-top: 100px;
-   padding-bottom: 100px;*/
-
-    background: var(--primary-color);
-}
-
-.footer-nav-container{
-    display:flex;
-    /*justify-content: flex-start;*/
-}
-
 .bottom-container{
     display: block;
     /*align-items: center;*/
@@ -711,11 +656,6 @@ img{
 
 /*---------BOTTOM-SUBSCRIBE-CONTAINER--------*/
 
-/*.bottom-subscribe-container {
-    display: block;
-    margin-left: auto;
-}*/
-
 .bottom-label{
     display: block;
     margin-bottom: 16px;
@@ -738,7 +678,6 @@ img{
 
 .bottom-email-input{
     display: flex;
-    /*width:264px;*/
     height:40px;
     padding-left: 16px;
     color:#ffff;
